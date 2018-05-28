@@ -202,7 +202,6 @@ export const withContext = contextTypes => {
             // Updates consist of simply rendering the container element into the shadow root again, as
             // the `this.wrapContainer()` element contains the passed in component's children.
             render(this.wrapContainer(), this.state.root);
-            retargetEvents(this.state.root);
 
         }
 

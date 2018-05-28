@@ -1223,7 +1223,6 @@ var withContext = exports.withContext = function withContext(contextTypes) {
         // Updates consist of simply rendering the container element into the shadow root again, as
         // the `this.wrapContainer()` element contains the passed in component's children.
         (0, _reactDom.render)(this.wrapContainer(), this.state.root);
-        (0, _reactShadowDomRetargetEvents2.default)(this.state.root);
       }
 
       /**
