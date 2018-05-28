@@ -138,5 +138,7 @@
       ]
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "react-shadow-dom-retarget-events": "^1.0.8"
+  }
 }

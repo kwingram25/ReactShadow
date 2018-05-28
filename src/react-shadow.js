@@ -2,6 +2,7 @@ import { get as fetch } from 'axios';
 import React, { Component, PureComponent, Children } from 'react';
 import PropTypes from 'prop-types';
 import { render, findDOMNode, unmountComponentAtNode } from 'react-dom';
+import retargetEvents from 'react-shadow-dom-retarget-events';
 import { dissoc, memoize, groupBy } from 'ramda';
 
 /**
@@ -188,6 +189,7 @@ export const withContext = contextTypes => {
                 this.attachIncludes(include).then(() => this.setState({ resolving: false }));
 
             };
+            retargetEvents(root);
 
         }
 
